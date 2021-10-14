@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Get Pokemon </title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col" id= "main1"> 
+                <!-- left box -->
+                <div id= "left-box">
+                    <div id="picture">
+                        <!-- insert the img -->
+                        <p>hi</p>
+                    </div>
+                    <div id="input-campus">
+
+                            <h3 style="text-align: center;"> ID </h3>
+                            <h3 style="text-align: center;" id="number"> </h3>
+                        
+                        
+                            <input id = "input" placeholder="Give the name or id">
+                        
+                        <!-- insert an output that show the id of the pokemon and a input that I use to get a pokemon by id and name-->
+                    </div>
+                    <div id="call-pokemon">
+                        <button id= "btn1" type="button" class="btn btn-outline-primary">Search your Pokemon</button>
+                        <!-- insert a button to call the pokemon -->
+                    </div>
+                    <div id= "change-pokemon">
+                        <button id="btn-previous"> < </button>
+                        <button id="btn-next"> > </button>
+                        <!-- insert two buttons to change the pokemon -->
+                    </div>
+                </div>
+            </div>
+            <div class="col" id="main2">
+                <!-- right box -->
+                <div id= "right-box">
+                    <div id= "pokemon-name">
+                        <!-- here I show the name of the pokemon -->
+                    </div>
+                    <div id= "pokemon-powers">
+                        <h2> Pokemon's power </h2>
+                        <!-- show the powers in a list -->
+                    </div>
+                    <div id= "movement">
+                        <h2> Pokemon's moves </h2>
+                        <!-- show a list of movies in which the pokemon is -->
+                     </div>
+                    <div id= "evolution">
+                        <h2> Evolutions </h2>
+                        <!-- here I have 3 buttons that are images of the pokemon's evolution -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
