@@ -1,0 +1,198 @@
+body {
+    background-image: url("img/mewtwo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: large;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    display: grid;
+    margin: 100px;
+    /* background-image: url("img/pokebols.jpg"); */
+    border-radius: 10px 10px 10px 10px;
+}
+
+#main1 {
+    width: 50%;
+    float: left;    
+    padding: 0px 10px 0px 0px;
+}
+
+#main2 {
+    width: 50%;
+    float: left;
+    padding: 0px 0px 10px 0px;
+}
+
+#left-box {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    margin-left: 10px;
+    background-color: rgba(255, 255, 255, 0.678);
+    border-color: black;
+    border: 1px solid;
+    border-radius: 5%;
+    width: auto;
+}
+
+#right-box {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 0px;
+    background-color: rgba(255, 255, 255, 0.678);
+    border-color: black;
+    border: 1px solid;
+    border-radius: 5%;
+    width: auto;
+}
+
+#picture {
+    width: 100;
+    text-align: center; 
+    padding: 10px;   
+}
+
+#input-campus {
+    width: 100%;
+    padding: 10px;
+}
+
+#input {
+    border: solid 3px;
+    border-color: purple;
+}
+
+#call-pokemon {
+    width: 100%;
+    padding: 10px; 
+}
+
+#change-pokemon {
+    width: 100%;
+    padding: 10px; 
+}
+
+#pokemon-name{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+#pokemon-powers {
+    width: 100%;
+    padding: 10px;
+    /* background-color: rgb(255, 166, 0); */
+    text-align: center;
+}
+
+#movement {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+#evolution {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+img:hover{
+    background-color: rgba(238, 130, 238, 0.658);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+li {
+    padding: 5px;
+}
+
+#btn1 {
+    border: solid, 1px;
+    
+    background-color: purple;
+    color: white;
+    border: solid, 1px;
+    border-color: purple;
+}
+#btn1:hover {
+    border-color: purple;
+    background-color: rgb(238, 130, 238);
+    border: solid, 1px;
+    border-color: purple;
+}
+
+#btn-previous {
+    background-color: purple;
+    color: white;
+    border-radius: 50%;
+    font-size: xx-large;
+    border: solid, 1px;
+    border-color: purple;
+    
+}
+
+#btn-next {
+    background-color: purple;
+    color: white;
+    border-radius: 50%;
+    font-size: xx-large;
+    border: solid, 1px;
+    border-color: purple;
+}
+
+#btn-previous:hover {
+    background-color: rgb(238, 130, 238);
+    color: black;
+    border: solid, 1px;
+    border-color: purple;
+}
+
+#btn-next:hover {
+    background-color: rgb(238, 130, 238);
+    color: black;
+    border: solid, 1px;
+    border-color: purple;
+}
+li {
+    background-color: white;
+    border: solid 5px;
+    border-color: white purple white purple;
+    text-align: justify;
+}
+li:last-child {
+    background-color: white;
+    border: solid 5px;
+    border-color: white purple purple purple;
+    text-align: justify;
+}
+h1 {
+    background-color: white;
+    padding: 15px;
+    border: solid 5px;
+    border-color: purple purple purple purple;
+    color: rgb(221, 42, 221);
+}
+.title {
+    background-color: white;
+    padding: 15px;
+    margin: 0%;
+    border: solid 5px;
+    border-color: purple purple white purple;
+    color: rgb(221, 42, 221);
+}
+#last-h2 {
+    color: purple;
+    text-shadow: 2px 2px rgb(221, 42, 221);
+}
