@@ -3,7 +3,13 @@
 
 function getPokemonFromInput(){
     const input = document.getElementById("input").value;
-    let inputLowercase = input.toLowerCase();  
+    let inputLowercase = input.toLowerCase();
+    
+    // document.getElementById("btn-next").addEventListener("click", () => {
+    //     inputLowercase += 1
+    //     getPokemon(inputLowercase);
+    // })
+    
     getPokemon(inputLowercase);
     
 }
@@ -18,16 +24,6 @@ async function getPokemon(inputLowercase){
     const powers = document.getElementById("pokemon-powers");
     const movement = document.getElementById("movement");
     const evolutions = document.getElementById("evolution");
-  
-    let id = 1;
-    let x = parseInt(inputLowercase)
-    console.log(x);
-    document.getElementById("btn-next").addEventListener("click", () => {
-        if(id < 898){
-            x += id;
-        }
-        console.log(x);
-    })
 
     if(!inputLowercase){
         return
@@ -43,69 +39,18 @@ async function getPokemon(inputLowercase){
     picture.innerHTML= "<img src=" + data.sprites['front_default'] + ">";
     number.innerHTML= data.id;
 
-    // write the typr
+    // write the type of pokemon
     let typesArray = []
     pokemonType.innerHTML="";
     pokemonType.innerHTML= "<h2 class = 'title-types'> Type of Pokémon </h2>";
     for(let i = 0; i < data.types.length; i++){
         let element = data.types[i].type.name;
         typesArray.push(element);
-        if(element === "grass"){
-            pokemonType.innerHTML += "<img class = 'types' src= 'img/grass.png'>";
-        }
-        if(element === "poison"){
-            pokemonType.innerHTML += "<img class = 'types' src= 'img/poison.png'>";
-        }
-        if(element === "normal"){
-            pokemonType.innerHTML += "<img class = 'types' src= 'img/normal.png'>";
-        }
-        if(element === "fire"){
-            pokemonType.innerHTML += "<img class = 'types' src= 'img/fire.png'>";
-        }
-        if(element === "water"){
-            pokemonType.innerHTML += "<img class = 'types' src= 'img/water.png'>";
-        }
-        if(element === "electric"){
-            pokemonType.innerHTML += "<img class = 'types' src= 'img/eletric.png'>";
-        }
-        if(element === "ice"){
-            pokemonType.innerHTML += "<img class = 'types' src= 'img/ice.png'>";
-        }
-        if(element === "fighting"){
-            pokemonType.innerHTML += "<img class = 'types' src= 'img/fighting.png'>";
-        }
-        if(element === "ground"){
-            pokemonType.innerHTML += "<img class = 'types' src= 'img/ground.png'>";
-        }
-        if(element === "flying"){
-            pokemonType.innerHTML += "<img class = 'types' src= 'img/flying.png'>";
-        }
-        if(element === "psychic"){
-            pokemonType.innerHTML += "<img class = 'types' src= 'img/psychic.png'>";
-        }
-        if(element === "bug"){
-            pokemonType.innerHTML += "<img class = 'types' src= 'img/bug.png'>";
-        }
-        if(element === "rock"){
-            pokemonType.innerHTML += "<img class = 'types' src= 'img/rock.png'>";
-        }
-        if(element === "ghost"){
-            pokemonType.innerHTML += "<img class = 'types' src= 'img/ghost.png'>";
-        }
-        if(element === "dark"){
-            pokemonType.innerHTML += "<img class = 'types' src= 'img/dark.png'>";
-        }
-        if(element === "dragon"){
-            pokemonType.innerHTML += "<img class = 'types' src= 'img/dragon.png'>";
-        }
-        if(element === "steel"){
-            pokemonType.innerHTML += "<img class = 'types' src= 'img/steel.png'>";
-        }
-        if(element === "fairy"){
-            pokemonType.innerHTML += "<img class = 'types' src= 'img/fairy.png'>";
-        }
+        pokemonType.innerHTML += "<img class = 'types' id = '" + element + "' src= 'img/" + element + ".png'>";
     }
-    
+    let grass = document.getElementById("grass");
+    console.log(grass);
+
     // write the powers
     powers.innerHTML="";
     powers.innerHTML = "<h2 class='title' >" + "Pokemon's power" + "</h2>";
@@ -178,3 +123,4 @@ async function getPokemon(inputLowercase){
 }
 
 document.getElementById("btn1").addEventListener("click",getPokemonFromInput);
+
